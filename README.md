@@ -1,4 +1,35 @@
+# RockMusic - Music Services Module
 
+Welcome to RockMusic! This Flutter application showcases a beautifully designed single-screen module for browsing various music services. It's built with a focus on clean UI, dynamic data from Firebase, and a well-structured MVVM architecture. Whether you're looking to understand Firebase integration, state management with Provider, or how to implement a custom UI with unique assets, this project serves as a great example.
+
+## App Preview
+
+Here's a glimpse of the RockMusic app in action:
+
+| HomeScreen (Top)                                                                                        | HomeScreen (Services)                                                                                   |
+| :------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------: |
+| <img src="https://raw.githubusercontent.com/sauravgautam320/rockmusic/refs/heads/main/screenshot1.png" width="300"> | <img src="https://raw.githubusercontent.com/sauravgautam320/rockmusic/refs/heads/main/screenshot2.png" width="300"> |
+
+### Screen Recording
+
+For a live demonstration of the app's features and responsiveness, check out the screen recording:
+
+*   [View Screen Recording (screenrecording.mkv)](https://raw.githubusercontent.com/sauravgautam320/rockmusic/refs/heads/main/screenrecording.mkv)
+    *(You might need to download the .mkv file to view it, or use a browser/player that supports MKV streaming.)*
+
+## Features
+
+*   **Dynamic Service Listing:** Services (title, description, background image, on-card icon) are fetched from Firebase Firestore.
+*   **Custom UI:** UI elements are styled using custom assets (images, icons) and fonts (Syne, Lobster) to match a specific design.
+*   **Responsive Cards:** Service cards display information clearly.
+*   **Navigation:** Tapping on a service card navigates to a detail screen showing the tapped service's title.
+*   **State Management:** Uses `provider` for managing the state of the HomeScreen.
+*   **Dependency Injection:** Utilizes `get_it` for service location and managing dependencies.
+*   **MVVM Architecture:** Code is structured into Model, View, and ViewModel layers.
+
+## Folder Structure
+
+The project follows a feature-first approach combined with layering for better organization and scalability.
 *   **`core`**: Contains shared code like app configurations (colors, strings, text styles, asset paths) and core services (e.g., dependency injection setup).
 *   **`data`**: Manages data operations.
     *   `models`: Defines the data structures (e.g., `MusicService`).
